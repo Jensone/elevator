@@ -1,0 +1,149 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Ascenceur */
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+main {
+    height: 100vh;
+    background-image: url("/images/4761808.jpeg");
+    background-attachment: fixed; 
+    justify-content: center;
+}
+
+.logo {
+    height: 20%;    
+}
+
+.elevator {
+    height: 80%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.elevator-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elevator-level-number {
+    width: 100px;
+    height: 40px;
+    background-color: #252525;
+    box-shadow: inset 0 0 10px 0px rgba(126,126,126,1)
+}
+
+.elevator-level-number p {
+    font-size: 2em;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+.elevator-border {
+    background: rgb(191,191,191);
+    background: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(65,65,65,1) 25%, rgba(196,196,196,1) 60%, rgba(90,90,90,1) 100%);
+}
+
+.elevator-doors {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px 0px 10px;
+    background-color: #101010;
+    background-image: url("/images/interieur.jpg");
+    border: 5px solid #101010;
+    border-bottom: 0;
+    justify-content: space-between;
+}
+
+.elevator-door-left {
+    width: 49.9%;
+    height: 100%;
+    background: rgb(191,191,191);
+    background: linear-gradient(0deg, rgba(191,191,191,1) 0%, rgba(126,126,126,1) 20%, rgba(96,96,96,1) 30%, rgba(222,222,222,1) 100%);
+}
+
+.elevator-door-right {
+    width: 49.9%;
+    height: 100%;
+    background: rgb(191,191,191);
+    background: linear-gradient(0deg, rgba(191,191,191,1) 0%, rgba(126,126,126,1) 20%, rgba(96,96,96,1) 30%, rgba(222,222,222,1) 100%);
+}
+
+/* Animation de l'ascenceur */
+.elevator-door-left.active {
+    width: 2%;
+}
+
+.elevator-door-right.active {
+    width: 2%;
+}
+
+/* Contrôles */
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.elevator-floor-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.floor {
+    background-color: aliceblue;
+    border: 0.025rem solid #252525;
+}
+
+.floor:hover, .elevator-up:hover, .open-door:hover, .elevator-down:hover {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+.elevator-up {
+    background: rgb(191,191,191);
+    border: 0.025rem solid #252525;
+
+}
+.open-door {
+    background: rgb(191,191,191);
+    border: 0.025rem solid #252525;
+
+}
+.elevator-down {
+    background: rgb(191,191,191);
+    border: 0.025rem solid #252525;
+
+}
+
+/* Insctructions */
+.instructions {
+    padding: 5px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.instructions ul {
+    font-size: 0.65rem;
+}

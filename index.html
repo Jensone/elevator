@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="logo flex-center">
+                <img src="./images/logo_dc blanc.png" alt="Logo DesCodeuses" width="200">
+            </div>
+            <div class="elevator flex-center">
+                <div class="elevator-level">
+                    <div class="elevator-level-number flex-center">
+                        <p id="level-number">1</p>
+                    </div>
+                </div>
+                <div class="elevator-border">
+                    <div class="elevator-content">
+                        <div class="elevator-doors flex-center">
+                            <div class="elevator-door-left"></div>
+                            <div class="elevator-door-right"></div>
+                        </div>
+                        <div class="elevator-floor">
+                            <div class="elevator-floor-left"></div>
+                            <div class="elevator-floor-right"></div>
+                        </div>
+                        <div class="elevator-button">
+                            <div class="elevator-button-left"></div>
+                            <div class="elevator-button-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="sidebar">
+            <div class="elevator-floor-numbers">
+                <div class="floor flex-center">0</div>
+                <div class="floor flex-center">1</div>
+                <div class="floor flex-center">2</div>
+                <div class="floor flex-center">3</div>
+                <div class="floor flex-center">4</div>
+                <div class="floor flex-center">5</div>
+            </div>
+            <div class="elevator-up flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m-1-8v4h2v-4h3l-4-4l-4 4h3z" opacity=".3"></path><path fill="currentColor" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0 2c5.52 0 10-4.48 10-10S17.52 2 12 2S2 6.48 2 12s4.48 10 10 10zm-1-10v4h2v-4h3l-4-4l-4 4h3z"></path></svg>
+            </div>
+            <div class="open-door flex-center">
+                <p>Ouvrir les portes</p>
+            </div>
+            <div class="elevator-down flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8s8-3.59 8-8s-3.59-8-8-8zm0 12l-4-4h3V8h2v4h3l-4 4z" opacity=".3"></path><path fill="currentColor" d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8s-8-3.59-8-8s3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm1 10V8h-2v4H8l4 4l4-4h-3z"></path></svg>
+            </div>
+            <div class="instructions flex-center">
+                <p>Bienvenue dans l'immeuble DesCodeuses. À l'aide de JavaScript, rendez cet ascenceur fonctionnel. Il faut pouvoir :
+                <br><br>
+                Ouvrir les portes de l'ascenceur à l'appel de l'ascenceur.
+                <br><br>
+                Choisir un étage de destionation.
+                <br><br>
+                Les portes doivent s'ouvrir une fois arrivé à destination et se refermer par la suite.
+                <br><br>
+                Un son doit être joué lors des différentes action de l'ascenceur.</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./script.js"></script>
+</html>
+
+
